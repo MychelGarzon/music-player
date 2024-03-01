@@ -9,7 +9,7 @@ import { MusicContext } from "../contexts/MusicContext"
 
 const Home = () => {
     const [state, setState] = useState({
-        audiPlayer: new Audio(),
+        audioPlayer: new Audio(),
         tracks: [
             {
                 name: "Sinister Music",

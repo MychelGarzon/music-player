@@ -13,14 +13,14 @@ const PlayerControls = () => {
             <div>
                 <p>{music.currentTrackName}</p>
             </div>
-            <button onClick={() => music.playPreviousTrack}>
+            <button onClick={() => music.playPreviousTrack()}>
                 <SkipStartFill />
             </button>
 
-            <button onClick={() => music.tooglePlay}>
+            <button onClick={() => music.togglePlay()}>
                 {music.isPlaying ? <PauseFill /> : <PlayFill />}
             </button>
-            <button onClick={() => music.playNextTrack}>
+            <button onClick={() => music.playNextTrack()}>
                 <SkipEndFill />
             </button>
         </div>
