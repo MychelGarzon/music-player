@@ -4,7 +4,6 @@ import { PauseFill, PlayFill, SkipEndFill, SkipStartFill } from "react-bootstrap
 import { useMusicPlayer } from "../hooks/useMusicPlayer";
 
 const PlayerControls = () => {
-    //TODO: ADD useMuscPlayer hook
 
     const music = useMusicPlayer();
 
@@ -21,7 +20,7 @@ const PlayerControls = () => {
             <button onClick={() => music.tooglePlay}>
                 {music.isPlaying ? <PauseFill /> : <PlayFill />}
             </button>
-            <button>
+            <button onClick={() => music.playNextTrack}>
                 <SkipEndFill />
             </button>
         </div>

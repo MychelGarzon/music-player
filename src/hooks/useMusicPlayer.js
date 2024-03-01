@@ -19,7 +19,7 @@ const useMusicPlayer = () => {
         if (index === state.currentTrackIndex) {
             tooglePlay();
         } else {
-            state.audioPlayer.pause();
+            state.audioPlayer.pause()
             state.audioPlayer = new Audio(state.tracks[index].file);
             state.audioPlayer.play();
             setState({ ...state, currentTrackIndex: index, isPlaying: true });
