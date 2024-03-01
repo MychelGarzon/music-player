@@ -41,5 +41,17 @@ const useMusicPlayer = () => {
             : (newIndex = state.currentTrackIndex + 1)
         playTrack(newIndex);
     }
+
+    return {
+        tooglePlay,
+        playTrack,
+        playPreviousTrack,
+        playNextTrack,
+        currentTrackIndex: state.currentTrackIndex,
+        currentTrackName: state.currentTrackIndex !== null &&
+            state.tracks[state.currentTrackIndex].name,
+        trackList: state.tracks,
+        isPlaying: state.isPlaying
+    }
 };
 export { useMusicPlayer };
