@@ -1,10 +1,10 @@
-import { Typography } from "@mui/material"
+import PlayerControls from "../components/PlayerControls"
 
 const Home = () => {
 
     return (
         <div>
-            <Typography variant="h6" component="h2">Home</Typography>
+            <PlayerControls />
         </div>
     )
 }
